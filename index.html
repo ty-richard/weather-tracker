@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>Weather up to par</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khula|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <h1>Weather is up to par <i class="material-icons">golf_course</i></h1>
+  <br><br>
+  <div class="infoArea">
+    <h2>
+    <p>Welcome to Weather is up to par! Planning a day out on the links here you can see if the weather is suitable for a good day on the course.
+    </p>
+  </h2>
+  </div>
+  <div id="map"></div>
+  <div class="col-md-6">
+    <form class="form-horizontal">
+      <div class="col-md-6">
+        <select type="select" class="courses" value="">
+            <option value=""  disabled selected>Select a Course</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-5 col-sm-7">
+          <button type="sumbit" class="input" value="submit">Let's Golf!</button>
+        </div>
+      </div>
+    </form>
+    <div class="weatherCard">
+      <div class="weatherContainer">
+        <p class="forecastIcon"></p>
+        <img id="symbol" class="hide" alt="">
+        <br><br>
+        <p class="forecastTemp">Current Temperature:</p>
+        <br><br>
+        <p class="forecastPrecipProbability">Chance of Rain:</p>
+        <br><br>
+        <p class="forecastWindSpeed">Wind Speed:</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTFkxdRlHzB_gZTeJAf3RLqCJyKDtV4Bc
+          &callback" async defer></script>
+  <script src="https://api.swingbyswing.com/v2/courses/search_by_location?lat=39.7392360&lng=-104.9902510&radius=20&active_only=yes&hole_count=18&order_by=distance_from_me_miles&from=1&limit=20&access_token=cb9c260f-9df9-47a3-9ed9-a8af13e66281"></script>
+  <script src="https://api.darksky.net/forecast/20758fa1826a1972a30b3b488442072f/36.031332,-108.489990"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

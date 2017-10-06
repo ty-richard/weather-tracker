@@ -1,0 +1,94 @@
+html, body {
+  height: 50%;
+  margin: 16px;
+  padding: 16px;
+  background-color: #aed581;
+}
+
+#map {
+  height: 400%;
+  width: 50%;
+  float: left;
+  border-radius: 2em;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 1em;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.material-icons {
+  font-size: 2em;
+}
+
+.infoArea {
+  font-family: 'Khula', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0.8;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.form-group {
+  border-left: 2em;
+}
+
+.courses {
+  font-family: 'Source Sans Pro', sans-serif;
+  float: inherit;
+  display: grid;
+  align-content: space-around;
+  background-color: #7da453;
+}
+
+.input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  border-radius: 24px;
+  display: flex;
+  align-content: space-around;
+  float: center;
+  background-color: #e1ffb1;
+  border-color: #aed581;
+}
+
+#symbol {
+  width: 160px;
+  height: 160px;
+}
+
+.hide {
+  display: none;
+}
+
+.forecastTemp {
+  font-family: 'Khula', sans-serif;
+  font-size: 24px;
+}
+
+.forecastPrecipProbability {
+  font-family: 'Khula', sans-serif;
+  font-size: 24px;
+}
+
+.forecastWindSpeed {
+  font-family: 'Khula', sans-serif;
+  font-size: 24px;
+}
+
+@media (max-width: 700px) {
+  #map {
+    width: 90%;
+    margin: 2em;
+  }
+  .courses {
+    margin: 2em;
+    border-right: auto;
+  }
+}
